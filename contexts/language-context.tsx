@@ -63,6 +63,7 @@ const translations: Translations = {
     "competition.science.badge1": "City 3rd Place",
     "competition.science.badge2": "Data Analyst",
     "competition.science.badge3": "Teamwork Award",
+    "competition.science.url": "View Award List →",
     "competition.icdl.title": "ICDL IT Security Competition",
     "competition.icdl.details": "2022 | Computer Skills Foundation",
     "competition.icdl.description":
@@ -74,6 +75,8 @@ const translations: Translations = {
     "competition.cruzhacks.description": "Developed a Python backend server using Gemini API, FastAPI, and MongoDB. Awarded Best MongoDB Use.",
     "competition.cruzhacks.badge1": "Winner",
     "competition.cruzhacks.badge2": "Best MongoDB Use",
+    "competition.cruzhacks.url": "take a look at my project →",
+    "competition.cruzhacks.github": "View on GitHub →",
 
     // Achievements
     "achievement.music": "2023 National Music Competition Choir Category - Excellence Award",
@@ -148,6 +151,7 @@ const translations: Translations = {
     "competition.science.badge1": "市級第三名",
     "competition.science.badge2": "數據分析",
     "competition.science.badge3": "團隊合作獎",
+    "competition.science.url": "查看得獎名單 →",
     "competition.icdl.title": "ICDL IT 安全競賽",
     "competition.icdl.details": "2022 | 電腦技能基礎",
     "competition.icdl.description": "掌握網絡安全協議，在1,500多名參賽者中排名前5%",
@@ -158,6 +162,8 @@ const translations: Translations = {
     "competition.cruzhacks.description": "設計Python後端伺服器，使用Gemini API, FastAPI, mongoDB 獲得最佳 MongoDB 應用獎",
     "competition.cruzhacks.badge1": "獲獎者",
     "competition.cruzhacks.badge2": "最佳 MongoDB 應用",
+    "competition.cruzhacks.url": "看看我的專案 →",
+    "competition.cruzhacks.github": "在 GitHub 上查看 →",
 
     // Achievements
     "achievement.music": "2023 全國學生音樂比賽  - 優等獎 (合唱類)",

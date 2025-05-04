@@ -19,11 +19,11 @@ export default function Portfolio() {
         <LanguageToggle />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-8">
+      <div className="grid grid-cols-1 xl:grid-cols-[400px_1fr] lg:grid-cols-1 gap-8 max-w-7xl mx-auto">
         {/* Left Sidebar */}
-        <div className="space-y-8">
+        <div className="space-y-8 lg:text-left text-center">
           {/* Profile Header */}
-          <div className="flex items-center gap-4">
+          <div className="flex lg:justify-start justify-center items-center gap-4">
             <Image
               src="/gary.png?height=100&width=100"
               alt="Profile"
@@ -48,7 +48,7 @@ export default function Portfolio() {
 
           {/* Education */}
           <div className="space-y-4">
-            <h2 className="text-xl font-mono flex items-center gap-2">
+            <h2 className="text-xl font-mono lg:justify-start justify-center flex items-center gap-2">
               <GraduationCap className="w-5 h-5" /> {t("section.education")}
             </h2>
             <div className="space-y-3">
@@ -65,7 +65,7 @@ export default function Portfolio() {
 
           {/* Languages */}
           <div className="space-y-4">
-            <h2 className="text-xl font-mono flex items-center gap-2">
+            <h2 className="text-xl font-mono lg:justify-start justify-center flex items-center gap-2">
               <Languages className="w-5 h-5" /> {t("section.languages")}
             </h2>
             <div className="space-y-2">
@@ -78,7 +78,7 @@ export default function Portfolio() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <div className="flex gap-4">
+            <div className="flex gap-4 lg:justify-start justify-center flex items-center gap-2">
               <Button variant="ghost" size="icon" asChild>
                 <Link href="mailto:yanggary2388@gmail.com">
                   <svg
@@ -117,11 +117,11 @@ export default function Portfolio() {
         {/* Right Content */}
         <div className="space-y-8">
           {/* Menu Button - Only show on mobile */}
-          <div className="flex justify-end lg:hidden">
+          {/* <div className="flex justify-end lg:hidden">
             <Button variant="ghost" size="icon">
               <Menu className="w-6 h-6" />
             </Button>
-          </div>
+          </div> */}
 
           {/* Technical Skills Section */}
           <section>
@@ -172,6 +172,14 @@ export default function Portfolio() {
                 <h3 className="font-medium">{t("competition.cruzhacks.title")}</h3>
                 <p className="text-sm text-blue-200">{t("competition.cruzhacks.details")}</p>
                 <p className="text-sm mt-2">{t("competition.cruzhacks.description")}</p>
+                  <div className="mt-2 space-x-4">
+                  <Button variant="default" size="sm" className="bg-gray-600 text-white hover:bg-gray-700" asChild >
+                    <Link href="https://devpost.com/software/echo-journal-ahfl9i">{t("competition.cruzhacks.url")}</Link>
+                  </Button>
+                  <Button variant="default" size="sm" className="bg-gray-600 text-white hover:bg-gray-700" asChild >
+                    <Link href="https://github.com/Gary0302/echo-BE">{t("competition.cruzhacks.github")}</Link>
+                  </Button>
+                  </div>
               </div>
 
               <div className="bg-blue-700 bg-opacity-50 p-4 rounded-lg">
@@ -183,6 +191,11 @@ export default function Portfolio() {
                 <h3 className="font-medium">{t("competition.science.title")}</h3>
                 <p className="text-sm text-blue-200">{t("competition.science.details")}</p>
                 <p className="text-sm mt-2">{t("competition.science.description")}</p>
+                <div className="mt-2 space-x-4">
+                  <Button variant="default" size="sm" className="bg-gray-600 text-white hover:bg-gray-700" asChild >
+                    <Link href="https://www.fsm.kh.edu.tw/upload/27/101_12079/2023%E9%AB%98%E9%9B%84%E5%B8%82%E7%AC%AC63%E5%B1%86%E4%B8%AD%E5%B0%8F%E5%AD%B8%E7%A7%91%E5%AD%B8%E5%B1%95%E8%A6%BD%E8%A4%87%E8%B3%BD%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE.pdf">{t("competition.science.url")}</Link>
+                  </Button>
+                  </div>
               </div>
 
               <div className="bg-blue-700 bg-opacity-50 p-4 rounded-lg">
@@ -201,6 +214,8 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Achievements Section */}
             <section className="bg-gray-900 rounded-xl p-6">
+              <div className="mt-4 flex justify-end">
+              </div>
               <h2 className="text-xl font-mono mb-4">{t("section.achievements")}</h2>
               <ul className="list-disc pl-5 space-y-2 text-sm">
                 <li>{t("achievement.music")}</li>
