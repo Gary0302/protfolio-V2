@@ -30,6 +30,7 @@ const translations: Translations = {
     "section.inventions": "Inventions",
     "section.projects": "Projects",
     "section.activity": "GitHub Activity",
+    "section.publications": "Publications",
 
     // Education
     "education.ucsc": "University of California, Santa Cruz",
@@ -78,6 +79,13 @@ const translations: Translations = {
     "competition.cruzhacks.url": "take a look at my project →",
     "competition.cruzhacks.github": "View on GitHub →",
 
+    // Publications
+    "publication.newinml.badge1": "ICML Workshop 2025",
+    "publication.newinml.title": "Direct Semantic Communication Between Large Language Models via Vector Translation",
+    "publication.newinml.details": "FuChun Yang, Jason Eshraghian",
+    "publication.newinml.description": "Forwarding the semantics of the first model to a second model",
+    "publication.newinml.url": "View Publication",
+
     // Achievements
     "achievement.music": "2023 National Music Competition Choir Category - Excellence Award",
     "achievement.leadership": "2023 Rotary Youth Leadership Awards Seminar",
@@ -119,6 +127,7 @@ const translations: Translations = {
     "section.inventions": "發明",
     "section.projects": "專案",
     "section.activity": "GitHub 活動",
+    "section.publications": "學術發表",
 
     // Education
     "education.ucsc": "加州大學聖克魯茲分校",
@@ -154,7 +163,8 @@ const translations: Translations = {
     "competition.science.url": "查看得獎名單 →",
     "competition.icdl.title": "ICDL IT 安全競賽",
     "competition.icdl.details": "2022 | 電腦技能基礎",
-    "competition.icdl.description": "掌握網絡安全協議，在1,500多名參賽者中排名前5%",
+    "competition.icdl.description":
+      "Mastered network security protocols and ranked among top 5% of 1,500+ participants",
     "competition.icdl.badge1": "全國前5%",
     "competition.icdl.badge2": "個人參賽",
     "competition.cruzhacks.title": "CruzHacks 黑客松",
@@ -164,6 +174,13 @@ const translations: Translations = {
     "competition.cruzhacks.badge2": "最佳 MongoDB 應用",
     "competition.cruzhacks.url": "看看我的專案 →",
     "competition.cruzhacks.github": "在 GitHub 上查看 →",
+
+    // Publications
+    "publication.newinml.badge1": "ICML 研討會 2025",
+    "publication.newinml.title": "通過向量翻譯實現大型語言模型之間的直接語義通信",
+    "publication.newinml.details": "楊富鈞, Jason Eshraghian",
+    "publication.newinml.description": "將第一個模型的語義轉發到第二個模型",
+    "publication.newinml.url": "查看論文",
 
     // Achievements
     "achievement.music": "2023 全國學生音樂比賽  - 優等獎 (合唱類)",

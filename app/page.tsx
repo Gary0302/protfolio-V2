@@ -11,7 +11,6 @@ import { useLanguage } from "@/contexts/language-context"
 
 export default function Portfolio() {
   const { t } = useLanguage()
-
   return (
     <div className="min-h-screen bg-black text-white p-6">
       {/* Language Toggle Button - Fixed at top right */}
@@ -37,14 +36,6 @@ export default function Portfolio() {
               <p className="text-gray-400">{t("profile.title")}</p>
             </div>
           </div>
-
-          {/* Bio */}
-          {/* <div className="space-y-6">
-            <p className="text-gray-300 text-lg leading-relaxed">{t("profile.bio")}</p>
-            <Button variant="outline" className="rounded-full">
-              {t("profile.more")}
-            </Button>
-          </div> */}
 
           {/* Education */}
           <div className="space-y-4">
@@ -148,6 +139,32 @@ export default function Portfolio() {
                   <li>{t("skills.ceh")}</li>
                   <li>{t("skills.tqc")}</li>
                 </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Publications Section */}
+          <section className="bg-green-600 rounded-xl p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-mono flex items-center gap-2">
+                <Award className="w-5 h-5" /> {t("section.publications")}
+              </h2>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-green-700 bg-opacity-50 p-4 rounded-lg">
+                <div className="flex flex-wrap gap-2 mb-2">
+                  <span className="bg-green-500 text-xs px-2 py-1 rounded-full">
+                    {t("publication.newinml.badge1")}
+                  </span>
+                </div>
+                <h3 className="font-medium">{t("publication.newinml.title")}</h3>
+                <p className="text-sm text-green-200">{t("publication.newinml.details")}</p>
+                <p className="text-sm mt-2">{t("publication.newinml.description")}</p>
+                  <div className="mt-2 space-x-4">
+                  <Button variant="default" size="sm" className="bg-gray-600 text-white hover:bg-gray-700" asChild >
+                    <Link href="https://openreview.net/forum?id=Ef1O0Bn7Ey&referrer=%5Bthe%20profile%20of%20FuChun%20Yang%5D(%2Fprofile%3Fid%3D~FuChun_Yang1)">{t("publication.newinml.url")}</Link>
+                  </Button>
+                  </div>
               </div>
             </div>
           </section>
